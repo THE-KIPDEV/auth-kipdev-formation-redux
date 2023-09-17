@@ -1,4 +1,4 @@
-# Application Météo
+# Système d'authentification avec React & Redux 
 
 Système d'authentification avec React & Redux utilisant l'API : https://github.com/YohannKIPFER/apikipdevformation
 
