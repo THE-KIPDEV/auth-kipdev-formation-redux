@@ -14,9 +14,10 @@ export default function SignIn() {
     try {
       // Effectuez ici votre appel API avec les données du formulaire (formData)
       const response = await loginUser(formData.email, formData.password);
-
+      console.log(response);
       if (response.data && response.data.token.token) {
         dispatch(login(response.data));
+      
         navigate("/dashboard");
       } else {
         if (response.message === "EMAIL_NOT_FOUND") {
@@ -45,6 +46,7 @@ export default function SignIn() {
           <form
             className="space-y-6"
             action="#"
+            id="myForm"
             method="POST"
             onSubmit={handleSubmit(handleSignIn)}
           >

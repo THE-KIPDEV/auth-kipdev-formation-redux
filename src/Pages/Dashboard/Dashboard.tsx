@@ -44,6 +44,7 @@ export default function SignIn() {
           </h2>
           <button
             type="button"
+            id="logout"
             onClick={handleSignOut}
             className="rounded bg-indigo-600 px-2 py-1 text-xs font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
@@ -54,6 +55,7 @@ export default function SignIn() {
           <form
             className="space-y-6"
             action="#"
+            id="formEditFirstName"
             method="POST"
             onSubmit={handleSubmit(handleEditFirstName)}
           >
